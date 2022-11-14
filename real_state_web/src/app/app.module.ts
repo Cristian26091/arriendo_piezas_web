@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +9,9 @@ import { IndexComponentComponent } from './Index/index-component/index-component
 import { RentComponentComponent } from './rent/rent-component/rent-component.component';
 import { ResultsComponentComponent } from './results/results-component/results-component.component';
 import { RoomComponentComponent } from './room/room-component/room-component.component';
-import { ProfilecomponentComponent } from './profilecomponent/profilecomponent.component';
+import { ToolbarComponent } from './auxComponents/toolbar/toolbar.component';
+import { ProfilecomponentComponent } from './profile/profilecomponent/profilecomponent.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { ProfilecomponentComponent } from './profilecomponent/profilecomponent.c
     RentComponentComponent,
     ResultsComponentComponent,
     RoomComponentComponent,
-    ProfilecomponentComponent
+    ProfilecomponentComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
