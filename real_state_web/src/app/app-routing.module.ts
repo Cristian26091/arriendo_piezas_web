@@ -1,36 +1,32 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IndexComponentComponent } from './Index/index-component/index-component.component';
+import { ResultsComponentComponent } from './results/results-component/results-component.component';
+import { RoomComponentComponent } from './room/room-component/room-component.component';
+import { ContactComponent } from './contact&support/contact/contact.component';
+import { RentComponentComponent } from './rent/rent-component/rent-component.component';
 
 const routes: Routes = [
   {
-    path: 'index'
-    //component: name
+    path: 'index',
+    component: IndexComponentComponent
   },
   {
-    path: 'results'
-    //component: name
+    path: 'results',
+    component: ResultsComponentComponent
   },
   {
-    path: 'room'
-    //component: name
+    path: 'room',
+    component: RoomComponentComponent
   },
   {
-    path: 'contact&support'
-    //component: name
+    path: 'contact&support',
+    component: ContactComponent
   },
   {
-    path: 'rent'
-    //component: name
-  },
-
-  {
-    path: 'profile'
-    //component: name
-  },
-  {
-    path: '**' //cualquiera sea la ruta (redireccionar)
-    //component: name
-  },
+    path: 'rent',
+    component: RentComponentComponent
+  }
 ];
 
 @NgModule({
