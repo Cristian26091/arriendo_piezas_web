@@ -10,8 +10,12 @@ import { RentComponentComponent } from './rent/rent-component/rent-component.com
 import { ResultsComponentComponent } from './results/results-component/results-component.component';
 import { RoomComponentComponent } from './room/room-component/room-component.component';
 import { ToolbarComponent } from './auxComponents/toolbar/toolbar.component';
-import { ProfilecomponentComponent } from './profile/profilecomponent/profilecomponent.component';
+import { MatStepperModule } from '@angular/material/stepper'; 
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { LoginComponent } from './login/login.component';
+import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RentComponentComponent,
     ResultsComponentComponent,
     RoomComponentComponent,
-    ProfilecomponentComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    LoginComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
