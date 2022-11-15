@@ -10,7 +10,9 @@ import { RentComponentComponent } from './rent/rent-component/rent-component.com
 import { ResultsComponentComponent } from './results/results-component/results-component.component';
 import { RoomComponentComponent } from './room/room-component/room-component.component';
 import { ToolbarComponent } from './auxComponents/toolbar/toolbar.component';
-import { MatStepperModule } from '@angular/material/stepper'; 
+import { MatStepperModule } from '@angular/material/stepper';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -27,13 +29,16 @@ import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.
     RoomComponentComponent,
     ToolbarComponent,
     LoginComponent,
-    StepperComponent
+    StepperComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatStepperModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
