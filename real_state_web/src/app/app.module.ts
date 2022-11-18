@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';  
 import { MatExpansionModule } from '@angular/material/expansion'
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatStepperModule } from '@angular/material/stepper';
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCardModule} from '@angular/material/card'; 
+// LOGICA DEL PROYECTO
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact&support/contact/contact.component';
@@ -12,15 +17,12 @@ import { RentComponentComponent } from './rent/rent-component/rent-component.com
 import { ResultsComponentComponent } from './results/results-component/results-component.component';
 import { RoomComponentComponent } from './room/room-component/room-component.component';
 import { ToolbarComponent } from './auxComponents/toolbar/toolbar.component';
-import { MatStepperModule } from '@angular/material/stepper';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatButtonModule} from '@angular/material/button'; 
+import { LoginComponent } from './login/login.component';
+import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.component';
+import { FAQComponent } from './auxComponents/faq/faq.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { LoginComponent } from './login/login.component';
-import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.
     ToolbarComponent,
     LoginComponent,
     StepperComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,
@@ -40,11 +43,12 @@ import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.
     BrowserAnimationsModule,
     MatToolbarModule,
     MatStepperModule,
-    ReactiveFormsModule,
     MatFormFieldModule,
-    MatIconModule,
     MatButtonModule,
     MatExpansionModule,
+    MatInputModule,
+    MatSelectModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
