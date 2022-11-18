@@ -1,0 +1,66 @@
+<mat-grid-list cols="3" rowHeight="50%">
+
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'transparent'">
+        <!-- Region -->
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        <div class="icon-padding"></div>
+        <mat-form-field>
+            <mat-label>Región</mat-label>
+            <mat-select >
+              <mat-option>None</mat-option>
+              <mat-option value="option3">Arica y parinacota</mat-option>
+              <mat-option value="option1">Tarapaca</mat-option>
+              <mat-option value="option2">Antofagaste</mat-option>
+              <mat-option value="option3">Atacama</mat-option>
+              <mat-option value="option3">Coquimbo</mat-option>
+              <mat-option value="option3">Valparaiso</mat-option>
+              <mat-option value="option3">Región Metropolitana</mat-option>
+              <mat-option value="option3">Libertador Bernardo O'higgins</mat-option>
+              <mat-option value="option3">Maule</mat-option>
+              <mat-option value="option3">Ñuble</mat-option>
+              <mat-option value="option3">Biobío</mat-option>
+              <mat-option value="option3">Araucanía</mat-option>
+              <mat-option value="option3">Ríos</mat-option>
+              <mat-option value="option3">Lagos</mat-option>
+              <mat-option value="option3">Aysén</mat-option>
+              <mat-option value="option3">Magallanes</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-grid-tile>
+    
+    
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'transparent'">
+        <!-- Casa o departamento -->
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="south_america"></mat-icon>
+        <div class="icon-padding"></div>
+        <mat-form-field>
+            <mat-label>Tipo de vivienda</mat-label>
+            <mat-select>
+            <mat-option>None</mat-option>
+            <mat-option value="option1">Casa</mat-option>
+            <mat-option value="option2">Departamento</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'transparent'">
+        <!-- texto3 -->
+        <button mat-raised-button color="primary" class="boton-buscar" >Buscar</button>
+    </mat-grid-tile>
+
+</mat-grid-list>
+  
+
+
+
+
+
