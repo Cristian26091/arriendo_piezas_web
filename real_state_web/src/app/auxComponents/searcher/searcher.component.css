@@ -1,0 +1,17 @@
+.mat-form-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 3px solid green; */
+}
+
+.icon-padding{
+    margin-left: 10px;
+}
+
+.boton-buscar {
+    width: 80%;
+
+}
+
