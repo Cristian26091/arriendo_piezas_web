@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearcherComponent } from './auxComponents/searcher/searcher.component';
 import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.component';
 import { CardRoomComponent } from './auxComponents/card-room/card-room.component';
+import { CalendarComponent } from './auxComponents/calendar/calendar/calendar.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CardRoomComponent } from './auxComponents/card-room/card-room.component
     SearcherComponent,
     ImageSliderComponent,
     CardRoomComponent,
+    CalendarComponent,
 
   ],
   imports: [
