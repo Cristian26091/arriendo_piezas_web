@@ -30,6 +30,7 @@ import { SearcherComponent } from './auxComponents/searcher/searcher.component';
 import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.component';
 import { CardRoomComponent } from './auxComponents/card-room/card-room.component';
 import { CalendarComponent } from './auxComponents/calendar/calendar/calendar.component';
+import { DataRoomContainerComponent } from './auxComponents/data-room-container/data-room-container/data-room-container.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { CalendarComponent } from './auxComponents/calendar/calendar/calendar.co
     ImageSliderComponent,
     CardRoomComponent,
     CalendarComponent,
+    DataRoomContainerComponent,
 
   ],
   imports: [
