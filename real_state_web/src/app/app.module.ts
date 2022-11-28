@@ -31,6 +31,7 @@ import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.
 import { CardRoomComponent } from './auxComponents/card-room/card-room.component';
 import { CalendarComponent } from './auxComponents/calendar/calendar/calendar.component';
 import { DataRoomContainerComponent } from './auxComponents/data-room-container/data-room-container/data-room-container.component';
+import { MapComponent } from './auxComponents/map/map/map.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { DataRoomContainerComponent } from './auxComponents/data-room-container/
     CardRoomComponent,
     CalendarComponent,
     DataRoomContainerComponent,
+    MapComponent,
 
   ],
   imports: [
