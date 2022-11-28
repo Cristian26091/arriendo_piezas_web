@@ -32,6 +32,11 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent
   },
+  // Ruta inicial redirecciona al index
+  {
+    path: '', 
+    redirectTo: '/index', pathMatch: 'full'
+  },
 ];
 
 @NgModule({
