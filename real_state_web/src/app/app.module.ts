@@ -31,7 +31,8 @@ import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.
 import { FAQComponent } from './auxComponents/faq/faq.component';
 import {MatGridListModule} from '@angular/material/grid-list'; 
 import {MatListModule} from '@angular/material/list'; 
-
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -74,6 +75,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatGridListModule,
     MatIconModule,
     MatListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
