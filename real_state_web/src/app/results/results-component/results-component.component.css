@@ -6,3 +6,8 @@
     align-items: center;
 
 }
+
+.salto-linea {
+    font-size: 0;
+    display: block;
+}
