@@ -17,6 +17,7 @@ import { DataRoomContainerComponent } from './auxComponents/data-room-container/
 import { RoomImageSliderComponent } from './auxComponents/room-image-slider/room-image-slider/room-image-slider.component';
 import { MapComponent } from './auxComponents/map/map/map.component';
 
+
 // LOGICA DEL PROYECTO
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

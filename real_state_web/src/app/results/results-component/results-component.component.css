@@ -11,3 +11,13 @@
     font-size: 0;
     display: block;
 }
+
+.col-6{
+    padding-top: 7px;
+    align-items: center;
+}
+
+.image-thumbnail{
+    align-items: center;
+
+}
