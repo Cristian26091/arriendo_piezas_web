@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "@popperjs/core": "^2.11.6",
+    "@types/google.maps": "^3.50.5",
     "bootstrap": "^5.2.3",
     "imagekitio-angular": "^1.0.2",
     "jquery": "^3.6.1",
