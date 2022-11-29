@@ -8,7 +8,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card'; 
-import {MatIconModule} from '@angular/material/icon'; 
+import {MatIconModule} from '@angular/material/icon';
+import { SearcherComponent } from './auxComponents/searcher/searcher.component';
+import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.component';
+import { CardRoomComponent } from './auxComponents/card-room/card-room.component';
+import { CalendarComponent } from './auxComponents/calendar/calendar/calendar.component';
+import { DataRoomContainerComponent } from './auxComponents/data-room-container/data-room-container/data-room-container.component';
+import { RoomImageSliderComponent } from './auxComponents/room-image-slider/room-image-slider/room-image-slider.component';
+import { MapComponent } from './auxComponents/map/map/map.component';
+
 
 // LOGICA DEL PROYECTO
 import { AppRoutingModule } from './app-routing.module';
@@ -23,10 +31,13 @@ import { LoginComponent } from './login/login.component';
 import { StepperComponent } from './rent/rent-component/stepper/stepper/stepper.component';
 import { FAQComponent } from './auxComponents/faq/faq.component';
 import {MatGridListModule} from '@angular/material/grid-list'; 
+import {MatListModule} from '@angular/material/list'; 
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatNativeDateModule} from '@angular/material/core';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearcherComponent } from './auxComponents/searcher/searcher.component';
-import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.component';
+
 
 
 @NgModule({
@@ -43,6 +54,11 @@ import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.
     FAQComponent,
     SearcherComponent,
     ImageSliderComponent,
+    CardRoomComponent,
+    CalendarComponent,
+    DataRoomContainerComponent,
+    RoomImageSliderComponent,
+    MapComponent,
 
   ],
   imports: [
@@ -59,6 +75,9 @@ import { ImageSliderComponent } from './auxComponents/image-slider/image-slider.
     MatCardModule,
     MatGridListModule,
     MatIconModule,
+    MatListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

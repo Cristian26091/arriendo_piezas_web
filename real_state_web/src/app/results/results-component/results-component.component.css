@@ -1,0 +1,23 @@
+.container {
+    margin: 10px;
+}
+
+.row{
+    align-items: center;
+
+}
+
+.salto-linea {
+    font-size: 0;
+    display: block;
+}
+
+.col-6{
+    padding-top: 7px;
+    align-items: center;
+}
+
+.image-thumbnail{
+    align-items: center;
+
+}
