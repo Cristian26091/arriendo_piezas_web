@@ -1,9 +1,9 @@
-const contact = require('../models/contact');
+const Contact = require('../models/contact');
 const contactCtrl = {};
 
 
 contactCtrl.getContacts = async (req, res) => {
-    const contacts = await contact.find();
+    const contacts = await Contact.find();
     res.json(contacts);
 }
 
@@ -12,12 +12,16 @@ contactCtrl.getContact = function () {
 
 }
 
-contactCtrl.createContact = (req, res) =>{
-
+contactCtrl.createContact = async (req, res) =>{
+    const contact = new Contact(req.body);
+    await contact.save();
+    res.json({
+        'status': 'Contacto saved'
+    });
 }
 
-contactCtrl.editContact = function () {
-
+contactCtrl.editContact = async (req, res) =>{
+    
 }
 
 contactCtrl.deleteContact = function () {
