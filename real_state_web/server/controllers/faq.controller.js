@@ -13,9 +13,7 @@ faqCtrl.getFaq = function () {
 }
 
 faqCtrl.createFaq = (req, res) =>{
-    res.json({
-        status:'FAQ goes here' 
-    });
+
 }
 
 faqCtrl.editFaq = function () {
