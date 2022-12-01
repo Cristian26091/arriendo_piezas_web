@@ -2,7 +2,7 @@ import { Component,} from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Contact } from 'src/app/models/contact';
 import { ContactService } from '../../services/contact.service';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
