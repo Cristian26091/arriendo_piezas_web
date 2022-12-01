@@ -9,7 +9,6 @@ faqCtrl.getFaqs = async (req, res) => {
 
 faqCtrl.getFaq = function () {
 
-
 }
 
 faqCtrl.createFaq = (req, res) =>{

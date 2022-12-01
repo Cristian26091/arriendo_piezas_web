@@ -7,7 +7,6 @@ contactCtrl.getContacts = async (req, res) => {
     res.json(contacts);
 }
 
-
 contactCtrl.createContact = async (req, res) =>{
     const contact = new Contact(req.body);
     await contact.save();
