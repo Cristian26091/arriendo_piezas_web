@@ -7,10 +7,6 @@ contactCtrl.getContacts = async (req, res) => {
     res.json(contacts);
 }
 
-contactCtrl.getContact = function () {
-
-
-}
 
 contactCtrl.createContact = async (req, res) =>{
     const contact = new Contact(req.body);

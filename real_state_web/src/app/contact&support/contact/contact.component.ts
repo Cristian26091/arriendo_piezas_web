@@ -1,4 +1,6 @@
-import { Component} from '@angular/core';
+import { Component,} from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +8,13 @@ import { Component} from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent  {
+
+  constructor( public contactService: ContactService){
+
+  }
+
+  sendMessage(form: NgForm){
+    console.log(form.value);
+  }
 
 }
