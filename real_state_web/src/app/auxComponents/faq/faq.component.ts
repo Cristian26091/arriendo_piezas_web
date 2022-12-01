@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Faq } from 'src/app/models/faq';
+import { FaqService } from '../../services/faq.service';
 
 @Component({
   selector: 'app-faq',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FAQComponent implements OnInit {
 
-  constructor() { }
+  constructor( public faqService: FaqService) { }
 
   ngOnInit(): void {
+    this.getFaqs();
+  }
+
+  getFaqs(){
+    this.faqService.getFaqs()
+      .subscribe( res =>{
+        this.faqService.faqs = res as Faq[];
+        //console.log(res);
+    });
   }
 
 }

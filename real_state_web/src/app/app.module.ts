@@ -34,9 +34,15 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list'; 
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import {MatNativeDateModule} from '@angular/material/core';
+import { NgFor } from '@angular/common'
+
+import { FormsModule } from '@angular/forms';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 
@@ -78,6 +84,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatListModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    FormsModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    NgFor
   ],
   providers: [],
   bootstrap: [AppComponent]
