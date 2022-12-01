@@ -1,13 +1,14 @@
-const room = require('../models/room');
+const Room = require('../models/room');
 const roomCtrl = {};
 
 roomCtrl.getRooms = async (req, res) => {
-    const rooms = await room.find();
+    const rooms = await Room.find();
     res.json(rooms);
 }
 
-roomCtrl.getRoom = function () {
-
+roomCtrl.getRoom = async (req, res) => {
+    const room = await Room.findById(req.params.idRoom);
+    res.json(room);
 }
 
 roomCtrl.createRoom = (req, res) =>{

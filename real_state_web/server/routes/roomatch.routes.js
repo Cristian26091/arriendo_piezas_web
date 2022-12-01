@@ -11,16 +11,15 @@ router.get('/faq', faq.getFaqs);
 // router.post('faq/', faq.createFaq);
 // router.get('/faq/:id', faq.getFaq);
 // router.get('/faq', faq.createFaq);
-// router.put('/faq/:id', faq.editFaqFaq);
+// router.put('/faq/:id', faq.editFaq);
 // router.delete('faq/:id', faq.deleteFaq);
 
 //----------ROOM ROUTES-----------
 router.get('/room', room.getRooms);
+router.get('/room/:idRoom', room.getRoom);
 // router.post('room/', room.createRoom);
-// router.get('/room/:id', room.getFaq);
-// router.get('/room', room.createFaq);
-// router.put('/room/:id', room.editFaqFaq);
-// router.delete('room/:id', room.deleteFaq);
+// router.put('/room/:id', room.editRoom);
+// router.delete('room/:id', room.deleteRoom);
 
 //----------CONTACT ROUTES-----------
 router.get('/contact', contact.getContacts);
