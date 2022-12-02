@@ -1,10 +1,10 @@
 export class Room {
 
-    constructor(_id='', latitude=0, longitud=0, banio_compartido=null, 
+    constructor(_id='', latitud=0, longitud=0, banio_compartido=null, 
     descripcion='', fecha_publicacion = null, region = '', ciudad = '',
     comuna = '', calle = '', numero = '', casa_depto = null, precio = 0){
         this._id = _id;
-        this.latitude = latitude;
+        this.latitud = latitud;
         this.longitud = longitud;
         this.banio_compartido = banio_compartido;
         this.descripcion = descripcion;
@@ -19,7 +19,7 @@ export class Room {
     }
 
     _id: string;
-    latitude: Number
+    latitud: Number
     longitud: Number
     banio_compartido: Boolean
     descripcion: String

@@ -18,10 +18,10 @@
   <mat-card-content>
     <p class="content">{{room.descripcion}}</p>
   </mat-card-content>
-  <!-- <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions> -->
+
+  <mat-card-actions>
+    <button mat-button (click)="goToRoom(room._id)">Ver</button>
+  </mat-card-actions>
 
 </mat-card>
 
