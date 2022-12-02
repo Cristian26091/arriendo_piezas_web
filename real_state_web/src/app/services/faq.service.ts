@@ -21,15 +21,15 @@ export class FaqService {
     return this.http.get(this.URL_API);
   }
 
-  postFaqs(faq: Faq){
+  postFaq(faq: Faq){
    
   }
 
-  putFaqs(faq: Faq){
+  putFaq(faq: Faq){
     
   }
 
-  deleteFaqs(_id : string){
+  deleteFaq(_id : string){
     
   }
 
