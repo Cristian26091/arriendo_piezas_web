@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, } from '@angular/core';
+import { Room } from '../../models/room';
 
 @Component({
   selector: 'app-card-room',
@@ -7,6 +8,20 @@ import { Component } from '@angular/core';
 })
 export class CardRoomComponent{
 
-  longText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`
+  direccion:String = '';
+  @Input() room: Room = null;
+  
+  constructor(){}
 
+  ngOnInit(): void {
+    // this.concatDireccion();
+
+  }
+
+  // concatDireccion(){
+  //   this.direccion = this.room.region + ', ' + 
+  //   this.room.ciudad + ', ' + this.room.comuna + ', ' +
+  //   this.room.calle + ', ' + this.room.comuna + ', ' + 
+  //   this.room.numero;
+  // }
 }

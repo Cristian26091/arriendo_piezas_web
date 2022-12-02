@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Faq } from 'src/app/models/faq';
 import { FaqService } from '../../services/faq.service';
 
@@ -10,7 +9,7 @@ import { FaqService } from '../../services/faq.service';
 })
 export class FAQComponent implements OnInit {
 
-  constructor( public faqService: FaqService) { }
+  constructor( public faqService: FaqService ) { }
 
   ngOnInit(): void {
     this.getFaqs();

@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
  const RoomSchema = new Schema({
+    latitude: {type: Number, required: true},
+    longitud: {type: Number, required: true},
     banio_compartido: { type: Boolean, required: true },
     descripcion: { type: String, required: true },
     fecha_publicacion: { type: Date, required: true },
