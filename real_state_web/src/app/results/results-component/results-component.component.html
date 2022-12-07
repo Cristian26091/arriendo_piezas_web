@@ -1,70 +1,41 @@
 <app-toolbar></app-toolbar>
 
-<div class="container" routerLink="/room">
-    
+<div class="container">
+    <!-- FILTRO -->
     <div class="row">
-        <!-- ESPACIO INICIAL -->
-        <div class="col-2"> 
-            
+
+        <div class="col-3">
+            Filtro
         </div>
-        <!-- IMAGEN -->
-        <div class="col-2"> 
-            <img src=".\assets\room-images\pieza 01.jpg" class="img-thumbnail" alt="Responsive image">
+
+        <div class="col-9">
+            <div class="container" *ngFor="let room of roomService.rooms" >
+    
+                <app-card-room [room] = "room"></app-card-room>
+
+                <span class="salto-linea"> - </span>
+                
+            </div>
         </div>
-        <!-- CONTENIDO -->
-        <div class="col-6">
-            <app-card-room></app-card-room>
-        </div>
-        <!-- ESPACIO final -->
-        <div class="col-2"> 
-            
-        </div>
+
     </div>
 
-    <span class="salto-linea"> - </span>
-
-    <div class="row">
-        <!-- ESPACIO INICIAL -->
-        <div class="col-2"> 
-            
-        </div>
-        <!-- IMAGEN -->
-        <div class="col-2"> 
-            <img src=".\assets\room-images\pieza 02.jpg" class="img-thumbnail" alt="Responsive image">
-        </div>
-        <!-- CONTENIDO -->
-        <div class="col-6">
-            <app-card-room></app-card-room>
-        </div>
-        <!-- ESPACIO final -->
-        <div class="col-2"> 
-            
-        </div>
-    </div>
-
-    <span class="salto-linea"> - </span>
-
-    <div class="row">
-        <!-- ESPACIO INICIAL -->
-        <div class="col-2"> 
-            
-        </div>
-        <!-- IMAGEN -->
-        <div class="col-2"> 
-            <img src=".\assets\room-images\pieza 03.jpg" class="img-thumbnail" alt="Responsive image">
-        </div>
-        <!-- CONTENIDO -->
-        <div class="col-6">
-            <app-card-room></app-card-room>
-        </div>
-        <!-- ESPACIO final -->
-        <div class="col-2"> 
-            
-        </div>
-    </div>
     
-    
-  </div>
+
+</div>
+
+
+
+<span class="salto-linea"> - </span>
+
+<div class="paginator">
+    <mat-paginator [length]="5"
+        [pageSize]="10"
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        aria-label="Select page">
+    </mat-paginator>
+</div>
+
   
   
   

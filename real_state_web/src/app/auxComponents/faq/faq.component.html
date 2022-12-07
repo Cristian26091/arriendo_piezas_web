@@ -1,31 +1,18 @@
 <mat-accordion>
+
     <h1 class="tittle-faq">PREGUNTAS FRECUENTES</h1>
-    <!-- etto 1 -->
-    <mat-expansion-panel hideToggle>
+
+    <mat-expansion-panel hideToggle *ngFor="let faq of faqService.faqs">
         <mat-expansion-panel-header>
             <mat-panel-title>
-                PREGUNTA 1
+                {{faq.question}}
             </mat-panel-title>
         </mat-expansion-panel-header>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>{{faq.response}}</p>
     </mat-expansion-panel>
-    <!-- etto 2 -->
-    <mat-expansion-panel hideToggle>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                PREGUNTA 2
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </mat-expansion-panel>
-    <!-- etto 3 -->
-    <mat-expansion-panel hideToggle>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                PREGUNTA 3
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </mat-expansion-panel>
+
+  
+
+    
 
 </mat-accordion>
