@@ -2,7 +2,6 @@ import { Component, AfterViewInit,OnInit, Input} from '@angular/core';
 import { environment } from '../../../../environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
 import { RoomService } from 'src/app/services/room.service';
-import { Room } from 'src/app/models/room';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

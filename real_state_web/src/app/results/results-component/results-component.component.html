@@ -1,26 +1,41 @@
 <app-toolbar></app-toolbar>
 
-<div class="container" *ngFor="let room of roomService.rooms" >
-    
+<div class="container">
+    <!-- FILTRO -->
     <div class="row">
-       
-        <!-- IMAGEN -->
-        <div class="col-3"> 
-            <img src=".\assets\room-images\pieza 01.jpg" class="img-thumbnail" alt="Responsive image">
+
+        <div class="col-3">
+            Filtro
         </div>
-        <!-- CONTENIDO -->
-        <div class="col-6">
-            <app-card-room [room] = "room"></app-card-room>
+
+        <div class="col-9">
+            <div class="container" *ngFor="let room of roomService.rooms" >
+    
+                <app-card-room [room] = "room"></app-card-room>
+
+                <span class="salto-linea"> - </span>
+                
+            </div>
         </div>
-        <!-- ESPACIO final -->
-        <div class="col-3"> 
-            
-        </div>
+
     </div>
 
-    <span class="salto-linea"> - </span>
     
-  </div>
+
+</div>
+
+
+
+<span class="salto-linea"> - </span>
+
+<div class="paginator">
+    <mat-paginator [length]="5"
+        [pageSize]="10"
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        aria-label="Select page">
+    </mat-paginator>
+</div>
+
   
   
   

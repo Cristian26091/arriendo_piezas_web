@@ -1,19 +1,12 @@
-.container {
-    margin: 10px;
-}
-
-.row{
-    align-items: center;
-
-}
 
 .salto-linea {
     font-size: 0;
     display: block;
 }
 
-.col-6{
-    padding-top: 7px;
+.mat-paginator{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
