@@ -4,31 +4,45 @@
 
 <span class="salto-linea"> - </span>
 
-<mat-card class="example-card">
-    <mat-card-header>
-        <mat-card-title>Nombre:</mat-card-title>
+<div class="card" style="width: 100%;">
+    <div class="card-body">
+      <h4 class="card-title texto-titulo">{{roomService.selectedRoom.ciudad}}{{", "}}{{roomService.selectedRoom.comuna}}{{", "}}{{roomService.selectedRoom.calle}}</h4>
+      <p class="card-text">{{roomService.selectedRoom.descripcion}}</p>
+    </div>
 
-        <mat-card-subtitle>
-            <mat-icon class="icon-card" aria-hidden="false" aria-label="Example home icon" fontIcon="location_on"></mat-icon>
-            Ubicación:
-        </mat-card-subtitle>
+    <ul class="list-group list-group-flush">
 
-        <mat-card-subtitle>
-            <mat-icon class="icon-card" aria-hidden="false" aria-label="Example home icon" fontIcon="bed"></mat-icon>
-            Camas:
-        </mat-card-subtitle>
+        <!-- Precio -->
+        <li class="list-group-item">
+            <p> <b>Precio:</b> {{roomService.selectedRoom.precio}}</p>
+        </li>
 
-        <mat-card-subtitle>
-            <mat-icon class="icon-card" aria-hidden="false" aria-label="Example home icon" fontIcon="bathtub"></mat-icon>
-            Baños:
-        </mat-card-subtitle>
+        <!-- Baño compartido -->
+        <li class="list-group-item">
+            <p> <b>Baño compartido:</b> {{banio_compartido}}</p>
+        </li>
 
-    </mat-card-header>
-    <mat-card-content>
-      <p>{{longText}}</p>
-    </mat-card-content>
+        <!-- Región -->
+        <li class="list-group-item">
+            <p> <b>Región:</b> {{roomService.selectedRoom.region}}</p>
+        </li>
 
-    <mat-card-footer class="footer-card">Publicado: dd/mm/aa</mat-card-footer>
-</mat-card>
+        <!-- Comuna -->
+        <li class="list-group-item">
+            <p> <b>Comuna:</b> {{roomService.selectedRoom.comuna}}</p>
+        </li>
+
+        <!-- Tipo inmueble -->
+        <li class="list-group-item">
+            <p> <b>Tipo de residencia:</b> {{roomService.selectedRoom.casa_depto}}</p>
+        </li>
+
+        <!-- Fecha de publicaicon -->
+        <li class="list-group-item">
+            <p> <b>Fecha de publicación:</b> {{roomService.selectedRoom.fecha_publicacion | date}}</p>
+        </li>
+
+    </ul>
+</div>
 
 <span class="salto-linea"> - </span>
