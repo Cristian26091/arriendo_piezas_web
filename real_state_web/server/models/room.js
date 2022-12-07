@@ -13,7 +13,7 @@ const { Schema } = mongoose;
     comuna: {type: String, required: true},
     calle: {type: String, required: true},
     numero: {type: String, required: true},
-    casa_depto: {type: Boolean, required: true},
+    casa_depto: {type: String, required: true},
     precio: {type: Number, required: true},
 });
 

@@ -1,6 +1,5 @@
-import { Component} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { RoomService } from 'src/app/services/room.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-data-room-container',
@@ -9,9 +8,21 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DataRoomContainerComponent {
 
-  constructor(private activaterouter: ActivatedRoute, public roomService: RoomService){}
-  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
-  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
-  originally bred for hunting.`;
+  banio_compartido: string = "";
+  constructor(public roomService: RoomService){}
+
+
+  ngOnInit(): void {
+    
+    this.parserTipoBanio(this.roomService.selectedRoom.banio_compartido);
+    console.log(this.roomService.selectedRoom);
+  }
+
+  parserTipoBanio(isCompartido: Boolean){
+    if(isCompartido){
+      this.banio_compartido = "Si";
+    }
+    this.banio_compartido = "No"
+  }
 
 }
