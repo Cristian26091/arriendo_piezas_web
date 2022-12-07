@@ -11,7 +11,7 @@ import { RoomService } from '../../services/room.service';
 export class CardRoomComponent implements OnInit{
 
   @Input() room: Room = null;
-
+  
   // constructor( public roomService: RoomService){}
   constructor( private activaterouter: ActivatedRoute, private router: Router, private roomService: RoomService){}
 
