@@ -2,7 +2,7 @@ export class Room {
 
     constructor(_id='', latitud=0, longitud=0, banio_compartido=null, 
     descripcion='', fecha_publicacion = null, region = '', ciudad = '',
-    comuna = '', calle = '', numero = '', casa_depto = null, precio = 0){
+    comuna = '', calle = '', numero = '', casa_depto = '', precio = 0){
         this._id = _id;
         this.latitud = latitud;
         this.longitud = longitud;
@@ -29,6 +29,6 @@ export class Room {
     comuna: String
     calle: String
     numero: String
-    casa_depto: Boolean
+    casa_depto: String
     precio: Number
 }

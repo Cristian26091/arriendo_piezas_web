@@ -16,6 +16,7 @@ import { CalendarComponent } from './auxComponents/calendar/calendar/calendar.co
 import { DataRoomContainerComponent } from './auxComponents/data-room-container/data-room-container/data-room-container.component';
 import { RoomImageSliderComponent } from './auxComponents/room-image-slider/room-image-slider/room-image-slider.component';
 import { MapComponent } from './auxComponents/map/map/map.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
 
 
 // LOGICA DEL PROYECTO
@@ -35,7 +36,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import {MatNativeDateModule} from '@angular/material/core';
 import { NgFor } from '@angular/common'
-import {MatPaginatorModule} from '@angular/material/paginator'; 
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSliderModule} from '@angular/material/slider'; 
 
 import { FormsModule } from '@angular/forms';
 
@@ -43,6 +45,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FilterResultComponent } from './auxComponents/filter-result/filter-result.component';
 
 
 
@@ -66,6 +69,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     DataRoomContainerComponent,
     RoomImageSliderComponent,
     MapComponent,
+    FilterResultComponent,
 
   ],
   imports: [
@@ -89,7 +93,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HttpClientModule,
     MatSnackBarModule,
     NgFor,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSliderModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
