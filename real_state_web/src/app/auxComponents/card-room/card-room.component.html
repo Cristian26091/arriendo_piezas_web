@@ -1,28 +1,42 @@
-<mat-card class="example-card">
 
-  <mat-card-header>
-    <mat-card-title>{{room.ciudad}}{{", "}}{{room.comuna}}{{", "}}{{room.calle}}</mat-card-title>
+<div class="card mb-3">
 
-    <mat-card-subtitle>
-      <mat-icon class="icon-card" aria-hidden="false" aria-label="Example home icon" fontIcon="attach_money"></mat-icon>
-      {{room.precio}}
-    </mat-card-subtitle>
+  <div class="row g-0">
 
-    <mat-card-subtitle>
-      <mat-icon class="icon-card" aria-hidden="false" aria-label="Example home icon" fontIcon="location_on"></mat-icon>
-      {{room.region}}
-    </mat-card-subtitle>
+    <div class="col-md-4 image-container">
+        <img src="..\assets\slider-images\room-1.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
 
-  </mat-card-header>
-  
-  <mat-card-content>
-    <p class="content">{{room.descripcion}}</p>
-  </mat-card-content>
+    <div class="col-md-8">
 
-  <mat-card-actions>
-    <button mat-button (click)="goToRoom(room._id)">Ver</button>
-  </mat-card-actions>
+      <div class="card-body">
 
-</mat-card>
+          <h4 class="card-title">{{room.ciudad}}{{", "}}{{room.comuna}}{{", "}}{{room.calle}}</h4>
+
+          <h5> {{room.region}} </h5>
+          
+          <h5 class="precio-text"> {{room.precio}} </h5>
+          
+          <p class="card-text"> {{room.descripcion}} </p>
+
+          <div class="footer-container row justify-content-between">
+
+            <div class="col-4">
+              <p class="card-text"><small class="text-muted">{{room.fecha_publicacion | date}}</small></p>
+            </div>
+
+            <div class="col-4 button-container">
+              <button type="button" class="btn btn-light" (click)="goToRoom(room._id)">Ver</button>
+            </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 
