@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion'
@@ -98,6 +98,9 @@ import { FilterResultComponent } from './auxComponents/filter-result/filter-resu
     MatSlideToggleModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ 
+    CUSTOM_ELEMENTS_SCHEMA 
+  ],
 })
 export class AppModule { }
