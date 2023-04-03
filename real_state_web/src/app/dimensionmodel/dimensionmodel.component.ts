@@ -47,7 +47,7 @@ export class DimensionmodelComponent implements OnInit{
     this.scene.add(this.directionalLight);
 
     // Agregar fondo a la escena
-    this.scene.background = new THREE.Color(0x000000);
+    this.scene.background = new THREE.Color(0X9b9b9b);
 
   }
 
@@ -64,7 +64,7 @@ export class DimensionmodelComponent implements OnInit{
     // Aquí puedes acceder al canvas utilizando la referencia container
     this.load3DObject('../assets/3d-models/bugatti.obj')
     .then((object) => {
-      object.scale.set(0.1, 0.1, 0.1);
+      object.scale.set(0.5, 0.5, 0.5);
       this.scene.add(object);
     })
     .catch((error) => {
