@@ -46,6 +46,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FilterResultComponent } from './auxComponents/filter-result/filter-result.component';
+import { DimensionmodelComponent } from './dimensionmodel/dimensionmodel.component';
 
 
 
@@ -70,6 +71,7 @@ import { FilterResultComponent } from './auxComponents/filter-result/filter-resu
     RoomImageSliderComponent,
     MapComponent,
     FilterResultComponent,
+    DimensionmodelComponent,
 
   ],
   imports: [
