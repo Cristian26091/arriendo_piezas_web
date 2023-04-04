@@ -9,7 +9,7 @@ export class RegionService {
   selectedRegion: Region;
   regions: Region[];
 
-  readonly URL_API = 'http://127.0.0.1:3000/api/room'
+  readonly URL_API = 'http://127.0.0.1:3000/api/region'
 
   constructor(private http: HttpClient) {
 
