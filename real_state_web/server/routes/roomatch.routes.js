@@ -4,6 +4,7 @@ const router = express.Router();
 const faq = require('../controllers/faq.controller');
 const room = require('../controllers/room.controller');
 const contact = require('../controllers/contact.controller');
+const region = require('../controllers/region.controller');
 
 //ROUTES
 //----------FAQ ROUTES-----------
@@ -28,5 +29,9 @@ router.post('/contact/', contact.createContact);
 // router.get('/contact', room.createContact);
 // router.put('/contact/:id', room.editContact);
 // router.delete('contact/:id', room.deleteContact);
+
+//----------REGION ROUTES-----------
+router.get('/region', region.getRegions);
+
 
 module.exports = router;

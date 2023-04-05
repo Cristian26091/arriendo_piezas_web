@@ -1,9 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSelectChange } from '@angular/material/select';
+import { RegionService } from '../../services/region.service';
+import { Region } from '../../models/region.model';
 
-interface Region {
-  value: string;
-  viewValue: string;
-}
+
+// interface Region {
+//   numero: String,
+//   nombre_region: string,
+//   comunas: {
+//       nombre_comuna: string,
+//   }[],
+// }
 
 @Component({
   selector: 'app-filter-result',
@@ -11,29 +18,27 @@ interface Region {
   styleUrls: ['./filter-result.component.css']
 })
 export class FilterResultComponent implements OnInit {
+  selectedRegion: string;
+  selectedComuna: string;
+  selectedRegionComunas: string[];
 
-  regions: Region[] = [
-    {value: 'R1', viewValue: 'Arica y parinacota'},
-    {value: 'R2', viewValue: 'Tarapaca'},
-    {value: 'R3', viewValue: 'Antofagaste'},
-    {value: 'R4', viewValue: 'Atacama'},
-    {value: 'R5', viewValue: 'Coquimbo'},
-    {value: 'R6', viewValue: 'Valparaiso'},
-    {value: 'R7', viewValue: 'Región Metropolitana'},
-    {value: 'R8', viewValue: 'Libertador Bernardo O higgins'},
-    {value: 'R9', viewValue: 'Maule'},
-    {value: 'R10', viewValue: 'Ñuble'},
-    {value: 'R11', viewValue: 'Biobío'},
-    {value: 'R12', viewValue: 'Araucanía'},
-    {value: 'R13', viewValue: 'Ríos'},
-    {value: 'R14', viewValue: 'Lagos'},
-    {value: 'R15', viewValue: 'Aysén'},
-    {value: 'R15', viewValue: 'Magallanes'},
-  ];
-
-  constructor() { }
+  constructor(public RegionService: RegionService) { }
 
   ngOnInit(): void {
+    this.getRegions();
   }
 
+  // onRegionSelected(event: MatSelectChange) {
+  //   this.selectedRegion = event.value;
+  //   const region = this.regions.find(r => r.nombre_region === this.selectedRegion);
+  //   this.selectedRegionComunas = region.comunas.map(comuna => comuna.nombre_comuna);
+  //   console.log(this.selectedRegion)
+  // }
+  getRegions(){
+    this.RegionService.getRegions()
+      .subscribe( res =>{
+        this.RegionService.regions = res as Region[];
+        console.log(res);
+    });
+  }
 }
