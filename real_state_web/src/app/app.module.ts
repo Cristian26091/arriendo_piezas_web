@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion'
@@ -46,6 +46,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FilterResultComponent } from './auxComponents/filter-result/filter-result.component';
+import { DimensionmodelComponent } from './dimensionmodel/dimensionmodel.component';
 
 
 
@@ -70,6 +71,7 @@ import { FilterResultComponent } from './auxComponents/filter-result/filter-resu
     RoomImageSliderComponent,
     MapComponent,
     FilterResultComponent,
+    DimensionmodelComponent,
 
   ],
   imports: [
@@ -98,6 +100,9 @@ import { FilterResultComponent } from './auxComponents/filter-result/filter-resu
     MatSlideToggleModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ 
+    CUSTOM_ELEMENTS_SCHEMA 
+  ],
 })
 export class AppModule { }

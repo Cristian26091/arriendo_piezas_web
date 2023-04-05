@@ -20,8 +20,8 @@
             <mat-card-subtitle>Región</mat-card-subtitle>
             <mat-form-field appearance="fill">
                 <mat-label>Escoge una región</mat-label>
-                <!-- <mat-select [(ngModel)]="selectedRegion" (selectionChange)="onRegionSelected($event)"> -->
-                <mat-select >
+                <mat-select [(ngModel)]="selectedRegion" (selectionChange)="onRegionSelected($event)">
+                
                     <mat-option *ngFor="let region of RegionService.regions" [value]="region.nombre_region">
                     {{region.nombre_region}}
                     </mat-option>

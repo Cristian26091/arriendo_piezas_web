@@ -8,6 +8,6 @@ export class Region {
     _id: String;
     numero: String;
     nombre_region: String;
-    comunas: String[];
+    comunas: any[] = [];
 
 }
