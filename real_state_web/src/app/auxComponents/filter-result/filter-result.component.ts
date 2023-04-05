@@ -28,17 +28,16 @@ export class FilterResultComponent implements OnInit {
     this.getRegions();
   }
 
-  // onRegionSelected(event: MatSelectChange) {
-  //   this.selectedRegion = event.value;
-  //   const region = this.regions.find(r => r.nombre_region === this.selectedRegion);
-  //   this.selectedRegionComunas = region.comunas.map(comuna => comuna.nombre_comuna);
-  //   console.log(this.selectedRegion)
-  // }
   getRegions(){
     this.RegionService.getRegions()
       .subscribe( res =>{
         this.RegionService.regions = res as Region[];
         console.log(res);
     });
+  }
+
+  onRegionSelected(event: MatSelectChange){
+    const region = this.RegionService.regions.find(r => r.nombre_region === event.value);
+    this.selectedRegionComunas = region.comunas.map(c => c.nombre_comuna);
   }
 }
